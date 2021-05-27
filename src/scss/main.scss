@@ -1,8 +1,13 @@
 // This is where you can import other stylesheets or write your scss code
+@import "playstation";
+@import "variable";
+@import "xbox";
+@import "pc";
+
+$blue-color: (
+  "primary": blue,
+  "secondary": green,
+  "dark": black,
+);
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
-h1 {
-  color: rgb(58, 134, 55);
-
-  border: 1px solid black;
-}
