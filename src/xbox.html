@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Dinoco</title>
+     <script
+      src="https://kit.fontawesome.com/911fd50b46.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -22,27 +27,14 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">
-          <img
-            class=""
-            src="/src/images/logo.png"
-            alt="Logo_Dinoco"
-            width="65px"
-            height="65px"
-        /></a>
+        <a class="navbar-brand" href="/src/index.html">
+          Dinoco</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 lead">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/src/index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="/src/index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/src/pc.html">Pc</a>
-            </li>
+          
             <li class="nav-item">
               <a class="nav-link" href="/src/playstation.html">Playstation</a>
             </li>
@@ -62,29 +54,100 @@
       </div>
     </nav>
 
-    <div class="row bg-black m-auto" style="width: 70%">
-      <!-- firstcard -->
-      <div class="col-md-3 col-sm-1">
-        <div class="card text-center">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
           <img
-            src="/src/images/cyberpunk-2077-1603114224129.jpg"
-            class="card-img-top"
-            alt="game"
+            src="/src/images/bgpc.jpg"
+            class="d-block w-100"
+            alt="image of Los Angeles"
           />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/src/images/bgpc.png"
+            class="d-block w-100"
+            alt="Image of
+          Los Angeles"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/src/images/bgpc1.jpg"
+            class="d-block w-100"
+            alt="Image of Los Angeles"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!-- cards -->
+    <div class="container-fluid p-0">
+    <div class="row bg-success m-auto" >
+      <!-- firstcard -->
+      <div class="col-md-4 p-3">
+        <div class="card text-center">
+          <img src="/src/images/fc6xbox.jpg" class="card-img-top" alt="game" />
           <div class="card-body bg-dark text-white">
-            <h5 class="card-title">Playstation4</h5>
+            <h5 class="card-title">Xbox</h5>
             <p class="card-text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Pariatur, iste.
             </p>
+            <a href="/src/images/81xdOXAODpL._SL1500_.jpg">
             <button class="btn btn-primary">Purchase</button>
+            </a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 p-3">
         <div class="card text-center">
           <img
-            src="/src/images/Resident-Evil-Village-Xbox-One-Xbox-Series-X-Game.jpg"
+            src="/src/images/71mq750T5YL._SL1399_.jpg"
             class="card-img-top"
             alt="game"
           />
@@ -98,13 +161,52 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 p-3">
         <div class="card text-center">
           <img
-            src="/src/images/c5bc0b38ee086648cab3082a92cbbda55f995281.jpeg"
+            src="/src/images/71TVUyKgHDL._SL1500_.jpg"
             class="card-img-top"
             alt="game"
           />
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">Xbox</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Pariatur, iste.
+            </p>
+            <button class="btn btn-primary">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-3">
+        <div class="card text-center">
+          <img src="/src/images/71mq750T5YL._SL1399_.jpg" class="card-img-top" alt="game" />
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">Playstation4</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Pariatur, iste.
+            </p>
+            <button class="btn btn-primary">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-3">
+        <div class="card text-center">
+          <img src="/src/images/81X3OtX69mL._SL1500_.jpg" class="card-img-top" alt="game" />
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">Playstation4</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Pariatur, iste.
+            </p>
+            <button class="btn btn-primary">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-3">
+        <div class="card text-center">
+          <img src="/src/images/squadxbox.jpg" class="card-img-top" alt="game" />
           <div class="card-body bg-dark text-white">
             <h5 class="card-title">Playstation4</h5>
             <p class="card-text">
@@ -116,6 +218,83 @@
         </div>
       </div>
     </div>
+    <div class="container-fluid bg-success m-0 p-5">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="/src/sell.html">
+        <img
+          src="/src/images/gcxbox100d.jpg"
+          alt="Playstation4"
+          class="img-fluid"
+          style="padding: 5px"
+        />
+        </a>
+        </div>
+        <div class=" col-md-3">
+          <a href="/src/sell.html">
+         <img
+          src="/src/images/gcxbox75d.jpg"
+          alt="Playstation4"
+          class="img-fluid"
+          style="padding: 5px"
+        />
+        </a>
+      </div>
+       <div class=" col-md-3">
+         <a href="/src/sell.html">
+         <img
+          src="/src/images/gcxbox25d.jpg"
+          alt="Playstation4"
+          class="img-fluid"
+          style="padding: 5px"
+        />
+        </a>
+      </div>
+       <div class=" col-md-3">
+         <a href="/src/sell.html">
+         <img
+          src="/src/images/gcxbox20d.jpg"
+          alt="Playstation4"
+          class="img-fluid"
+          style="padding: 5px"
+        />
+        </a>
+      </div>
+      </div>
+
+      <!-- footer -->
+
+<div class="container-fluid m-auto pt-5">
+    <div class="footer_trust_top">
+    <p>AS FEATURED IN</p>
+    <div class="trustlogos">
+    </div>
+  </div>
+  
+  
+
+  <div class="container-fluid">
+        <div class="row">
+         
+        <div class="footer_bottom p-0 ">
+        <div class="col-8 footer_copyright">
+         <p>©2021 All rights reserved. <a href="#">Dinoco.Ltd</a></p>
+
+             <div class="col-4">
+              <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+            </div>
+          
+        </div>
+         </div>
+    
+  </div>
+  <div class="col-md-9 col-xs-12 footer__partners"><img src="https://www.authenticireland.com/wp-content/uploads/2018/04/Bottom_Trust2.png">
+  </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
