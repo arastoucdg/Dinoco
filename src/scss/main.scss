@@ -1,8 +1,107 @@
 // This is where you can import other stylesheets or write your scss code
+@import "playstation";
+@import "variable";
+@import "xbox";
+
+$blue-color: (
+  "primary": blue,
+  "secondary": green,
+  "dark": black,
+);
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Lustria&family=Sigmar+One&display=swap");
 
-h1 {
-  color: rgb(58, 134, 55);
+.jumbotron {
+  text-align: center;
+  background-color: rgb(199, 194, 194);
+}
 
-  border: 1px solid black;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Sigmar One", cursive;
+  color: blue;
+}
+p {
+  font-family: "Lustria", serif;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+// footer//
+.footer_main {
+  padding: 0px 0px 50px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul.footer_list {
+  list-style: none;
+  padding-left: 0px;
+}
+ul.footer_list li {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+ul.footer_list li.phone {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 1);
+}
+
+ul.footer_list li a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  text-transform: none;
+}
+ul.footer_list a:hover {
+  color: rgba(54, 204, 142, 1);
+  text-decoration: none;
+  list-style: none;
+}
+
+.trustlogos {
+  content: url(https://www.authenticireland.com/wp-content/uploads/2018/04/TopTrust1.png);
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+.footer_trust_top {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.footer_trust_top p {
+  font-family: montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.footer_main {
+  margin: 20px 0px 20px 0px;
+}
+
+.footer_copyright p {
+  font-size: 12px;
+  color: rgba(235, 219, 219, 0.5);
+  padding-top: 20px;
+}
+
+.footer__partners img {
+  float: right;
+  margin: 10px auto;
+  max-width: 100%;
 }
